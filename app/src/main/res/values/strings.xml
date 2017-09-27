@@ -11,4 +11,8 @@
     <string name="login_clave2">Contraseña</string>
     <string name="login_usuario" />
     <string name="login_user">Usuario</string>
+    <string name="frgament_direccion">Dirección</string>
+    <string name="fragment_login_Puerto">Puerto</string>
+    <string name="fragment_login_button">pursa haqui</string>
+    <string name="fragment_login_button2">Conectar</string>
 </resources>
