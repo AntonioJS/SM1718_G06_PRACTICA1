@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SM1718_G06_PRACTICA1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_login_title">Práctica1</string>
+    <string name="fragmetn_login_description">Servicios moviles 17/18</string>
+    <string name="fragment_login_user">Usuario</string>
+    <string name="fragment_linea2">Clave</string>
+    <string name="login_clave">Clave</string>
+    <string name="login_clave2">Contraseña</string>
+    <string name="login_usuario" />
+    <string name="login_user">Usuario</string>
+</resources>
