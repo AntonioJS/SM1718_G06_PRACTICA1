@@ -1,6 +1,7 @@
 package es.ujaen.git.sm1718_g06_practica1;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,8 +24,8 @@ public class LoginFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private String ip;
+    private String port;
 
 
     public LoginFragment() {
@@ -35,8 +36,8 @@ public class LoginFragment extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
+     * @param ip Parameter 1.
+     * @param port Parameter 2.
      * @return A new instance of fragment LoginFragment.
      */
     // TODO: Rename and change types and number of parameters
@@ -49,28 +50,55 @@ public class LoginFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
-    @Override
+@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            ip = getArguments().getString(ARG_PARAM1);
+            port = getArguments().getString(ARG_PARAM2);
         }
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View fragment = inflater.inflate(R.layout.fragment_login, container, false);
-
+//cambiar los edittext6
         Button connect= (Button) fragment.findViewById(R.id.button2_login);
-        final EditText name= (EditText) fragment.findViewById(R.id.editText6);
+        final EditText usuario= (EditText) fragment.findViewById(R.id.editText6);
+        final EditText contraseña= (EditText) fragment.findViewById(R.id.editText6);
+        final EditText ip= (EditText) fragment.findViewById(R.id.editText6);
+        final EditText port= (EditText) fragment.findViewById(R.id.editText6);
+
         connect.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                String nombre= name.getText().toString();
-                Toast.makeText(getContext(),nombre,Toast.LENGTH_LONG).show();
+                String s_usuario= usuario.getText().toString();
+                String s_contraseña= contraseña.getText().toString();
+                String s_ip= ip.getText().toString();
+                String s_port= port.getText().toString();
+                short port2=0;
+                    try {
+                        port2 = Short.parseShort(s_port);
+                    }catch (java.lang.NumberFormatException ex){
+                        port2 =6000;
+                    }
+                CorrectionUserData data=new CorrectionUserData(s_usuario,s_contraseña,port2,s_ip){
+
+                };
+
+                Toast.makeText(getContext(),"hola "+s_usuario+" "+s_contraseña+"",Toast.LENGTH_LONG).show();
+
+                Intent nueva=new Intent(getActivity(),ServiceActivity.class);
+
+
+                nueva.putExtra("param_user",data.getName());
+                nueva.putExtra("param_user",data.getSurname());
+                nueva.putExtra("param_user",data.getUsuario());
+                nueva.putExtra("param_user",data.getContraseña());
+
+                startActivity(nueva);
+
+
             }
         });
 

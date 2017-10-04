@@ -9,10 +9,14 @@
     <string name="fragment_linea2">Clave</string>
     <string name="login_clave">Clave</string>
     <string name="login_clave2">Contraseña</string>
-    <string name="login_usuario" />
+    <string name="login_usuario" translatable="false" />
     <string name="login_user">Usuario</string>
     <string name="frgament_direccion">Dirección</string>
     <string name="fragment_login_Puerto">Puerto</string>
     <string name="fragment_login_button">pursa haqui</string>
     <string name="fragment_login_button2">Conectar</string>
+    <string name="login_fragment_clave">Clave</string>
+    <string name="login_fragment_valorclave" translatable="false" />
+    <string name="activity_service">Esto pertenece a la actividad 2</string>
+    <string name="service">AVTIVIDAD2</string>
 </resources>

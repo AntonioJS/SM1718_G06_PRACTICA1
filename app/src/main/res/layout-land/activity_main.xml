@@ -14,7 +14,10 @@
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="532dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -24,7 +27,10 @@
         tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="16dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/fragment2"
+        android:layout_toStartOf="@+id/fragment2" />
 
     <fragment
         android:id="@+id/fragment2"
@@ -35,7 +41,6 @@
         tools:layout_editor_absoluteY="110dp"
         tools:layout="@layout/fragment_login"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/imageView2" />
+        android:layout_alignParentEnd="true" />
 
 </android.widget.RelativeLayout>
