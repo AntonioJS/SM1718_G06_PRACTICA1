@@ -88,14 +88,17 @@ public class LoginFragment extends Fragment {
 
                 Toast.makeText(getContext(),"hola "+s_usuario+" "+s_contraseña+"",Toast.LENGTH_LONG).show();
 
-                Intent nueva=new Intent(getActivity(),ServiceActivity.class);
+                 TareaAutentica tarea = new TareaAutentica();
+
+                 tarea.execute(data);
+
+              Intent nueva=new Intent(getActivity(),ServiceActivity.class);
 
 
-                nueva.putExtra("param_user",data.getName());
-                nueva.putExtra("param_user",data.getSurname());
-                nueva.putExtra("param_user",data.getUsuario());
-                nueva.putExtra("param_user",data.getContraseña());
-
+             nueva.putExtra("param_user",data.getName());
+            nueva.putExtra("param_user",data.getSurname());
+               nueva.putExtra("param_user",data.getUsuario());
+              nueva.putExtra("param_user",data.getContraseña());
                 startActivity(nueva);
 
 

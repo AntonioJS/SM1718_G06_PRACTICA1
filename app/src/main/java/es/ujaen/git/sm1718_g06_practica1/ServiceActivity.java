@@ -2,6 +2,7 @@ package es.ujaen.git.sm1718_g06_practica1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ServiceActivity extends AppCompatActivity
@@ -19,9 +20,9 @@ public class ServiceActivity extends AppCompatActivity
         String ip= getIntent().getStringExtra(PARAM_IP);
         short port= getIntent().getShortExtra(PARAM_PORT,(short)6000);
 
-        Toast.makeText(this,"Hola")
+        Toast.makeText(this,"Hola");
 
         TextView title= (TextView) findViewById(R.id.textView);
-        title.setText("Hola",+usuario);
+        title.setText("Hola",user);
     }
 }
