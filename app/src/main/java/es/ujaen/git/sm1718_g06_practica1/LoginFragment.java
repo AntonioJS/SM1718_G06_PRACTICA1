@@ -69,7 +69,11 @@ public class LoginFragment extends Fragment {
         //Situamos nuestros diferentes 'editText' según el parámetro al que hagan referencia.
 
         Button connect= (Button) fragment.findViewById(R.id.button2_login);
+        //R.id es un identificador de TextView.
+        //Con él referenciamos en el código el campo usuario con su campo de texto correspondiente, que
+        //en nuestro caso es editText6.
         final EditText usuario = (EditText) fragment.findViewById(R.id.editText6);
+        //Ocurre igual en los demás casos.
         final EditText contraseña = (EditText) fragment.findViewById(R.id.editText);
         final EditText ip = (EditText) fragment.findViewById(R.id.editText7);
         final EditText port = (EditText) fragment.findViewById(R.id.editText8);

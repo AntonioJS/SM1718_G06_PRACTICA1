@@ -3,7 +3,7 @@
     <string name="app_name">SM1718_G06_PRACTICA1</string>
     <string name="fragment_linea2">Clave</string>
     <string name="fragment_login_Puerto">Puerto</string>
-    <string name="fragment_login_button">pursa haqui</string>
+    <string name="fragment_login_button">pulsa aqui</string>
     <string name="fragment_login_button2">Conectar</string>
     <string name="fragment_login_title">Práctica1</string>
     <string name="fragment_login_user">Usuario</string>
@@ -16,3 +16,4 @@
     <string name="login_fragment_valorclave"></string>
     <string name="login_user">Usuario</string>
 </resources>
+<!--- Aquí encontramos las traducciones a los valores de nuestros fragmentos-->
