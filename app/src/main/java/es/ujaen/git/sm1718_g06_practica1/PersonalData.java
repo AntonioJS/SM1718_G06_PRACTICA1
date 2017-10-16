@@ -11,7 +11,7 @@ public class PersonalData {
     protected String usuario="";
     protected String contraseña="";
 
-    //hara falta un constructor por defecto
+    //Creamos un constructor por defecto.
     public PersonalData(String usuario,String contraseña){
         this.usuario=usuario;
         this.contraseña=contraseña;
@@ -20,6 +20,7 @@ public class PersonalData {
 
     public PersonalData(){
     }
+// Métodos get y set dado que los atributos son 'protected'.
 
     public String getName() {
         return name;

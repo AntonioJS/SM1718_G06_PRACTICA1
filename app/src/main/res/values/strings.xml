@@ -18,5 +18,8 @@
     <string name="login_fragment_clave">Clave</string>
     <string name="login_fragment_valorclave" translatable="false" />
     <string name="activity_service">Esto pertenece a la actividad 2</string>
-    <string name="service">AVTIVIDAD2</string>
+    <string name="service">ACTIVIDAD2</string>
+    <string name="Service_title">ACTIVIDAD 2</string>
+    <string name="service2">Actividad 2</string>
+    <string name="app_name2">SSMM1718_G06_PRACTICA1</string>
 </resources>
